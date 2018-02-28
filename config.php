@@ -5,8 +5,8 @@ set_time_limit(0); //set time limit in sec
 // DATABASE SETTING
 	$Cfg["mysql"]["host"] = "localhost"; //Tip: Don't change it. :D
 	$Cfg["mysql"]["user"] = "root"; // mysql username
-	$Cfg["mysql"]["pass"] = "your pass"; // mysql password
-	$Cfg["mysql"]["db"] = "passwordl"; //database to store
+	$Cfg["mysql"]["pass"] = ""; // mysql password
+	$Cfg["mysql"]["db"] = "passwordl"; //database name
 //=================================================
 // Decrypt SETTING
 	$Cfg["decrypt"]["save"] = "all";
@@ -16,7 +16,7 @@ set_time_limit(0); //set time limit in sec
 	$Cfg["decrypt"]["PASSWORD_MAX_LENGTH"] = "8";
 	$Cfg["decrypt"]["HASH_ALGO"] = $Cfg["hash"];
 // Encrypt SETTING
-	$Cfg["encrypt"]["save"] = "on"; //on = save encrypt data in database off = don't save
+	$Cfg["encrypt"]["save"] = "on"; //on = save encrypt data in database - off = don't save
 //Don't edit This below
 //=================================================
 $db = $Cfg["mysql"]["db"];
